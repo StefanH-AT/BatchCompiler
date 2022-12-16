@@ -1,0 +1,32 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BatchCompiler.Themes.AppTheme">
+  <Design.PreviewWith>
+    <StackPanel MinWidth="500" MinHeight="500">
+      <Menu>
+        <MenuItem Header="File">
+          <MenuItem Header="New"/>
+          <MenuItem Header="Open"/>
+          <MenuItem Header="Save"/>
+        </MenuItem>
+      </Menu>
+      <TabControl>
+        <TabItem Header="Tab1" >
+          
+        </TabItem>
+        <TabItem Header="Tab2">
+          
+        </TabItem>
+      </TabControl>
+    </StackPanel>
+  </Design.PreviewWith>
+
+  <Style Selector="TabItem">
+    <Setter Property="Padding" Value="8"/>
+    <Setter Property="FontSize" Value="16"/>
+  </Style>
+  
+  <Style Selector="Menu">
+    <Setter Property="Background" Value="{DynamicResource ThemeControlMidHighColor}"/>
+  </Style>
+</Styles>

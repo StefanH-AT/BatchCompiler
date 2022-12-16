@@ -1,0 +1,25 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:BatchCompiler.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="500"
+        Width="400" Height="500"
+        x:Class="BatchCompiler.Views.ProfileSelectWindow"
+        Title="Select Profile">
+  
+  <Design.DataContext>
+    <vm:ProfileSelectViewModel />
+  </Design.DataContext>
+
+  <StackPanel>
+    <TextBlock>Select Profile</TextBlock>
+    <DataGrid Items="{Binding Profiles}">
+      
+    </DataGrid>
+    <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal">
+      <Button Command="{Binding NewProfile}">New</Button>
+      <Button Command="{Binding AddProfile}">Add</Button>
+    </StackPanel>
+  </StackPanel>
+</Window>
